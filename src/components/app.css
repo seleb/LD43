@@ -47,3 +47,16 @@
 	background: black;
 	color: white;
 }
+
+.art1.app::after {
+	background: url('../assets/bg1.png') center center;
+}
+
+.art2.app::after {
+	background: url('../assets/bg2.png') center center;
+}
+
+.art2.app {
+	background: linear-gradient(217deg, rgba(144, 181, 167, 0.3), rgba(195, 163, 132, .3) 70.71%), linear-gradient(127deg, rgba(99, 59, 21, .3), rgba(105, 113, 165, 0.3) 70.71%), linear-gradient(336deg, #254c52, #83758c 70.71%);
+	color: #ffd1d1;
+}

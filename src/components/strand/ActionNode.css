@@ -6,3 +6,10 @@
 .action-node:hover{
 	color: blue;
 }
+
+.art2 .action-node {
+	color: #bbbbbb
+}
+.art2 .action-node:hover {
+	color: #ffffff
+}

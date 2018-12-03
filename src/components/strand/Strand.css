@@ -37,3 +37,12 @@
 .strand>.passages-area::-webkit-scrollbar-track{
 	background: none;
 }
+
+.art1 .strand {
+	font-family: 'Comic Sans', cursive;
+	border-image-source: url('./../../assets/border1.png');
+}
+.art2 .strand {
+	font-family: 'Times New Roman', Times, serif;
+	border-image-source: url('./../../assets/border2.png');
+}

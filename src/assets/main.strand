@@ -1,4 +1,8 @@
 ::start
+people like when you get meta
+
+...right?
+
 [[start game]]
 
 [[about]]
@@ -9,4 +13,324 @@ written by [[Sean S. LeBlanc|window.open('https://seansleblanc.itch.io/', '_blan
 [[back|this.back()]]
 
 ::start game
+<<set idea=0>><<set music=0>><<set art=0>><<set code=0>><<set energy=2>><<set time=7>>it's friday, november 30th
 
+you just got off work; what do you want to do?
+
+[[binge-watch some cartoons]]
+[[check Twitter]]
+[[go to bed]]
+
+::binge-watch some cartoons
+<<do this.time=7>><<set cartoon=1>>you load up a show about friendship and/or magic
+
+it's not great, but you watch a few episodes anyway
+
+[[keep watching]]
+[[go to bed]]
+[[check Twitter]]
+
+::keep watching
+<<do --this.energy>>before you know it, you're already at the finale
+
+the ending's all well and dramatic, but they killed your ship a couple episodes back so your heart's not really in it
+
+[[go to bed]]
+[[check Twitter]]
+
+::go to bed
+<<set cartoon=0>><<do this.time=6>>oh big mood
+
+you cozy up in a bundle of blankets and [[conk out]] for the night
+
+::conk out
+<<do ++this.energy>>you get a solid 8 hours rest, and then smooth out another 2 for good measure
+
+[[get some breakfast]]
+[[check Twitter]]
+
+::get some breakfast
+by the time you're proper "up", it's more of a brunch really
+
+pretty good though
+
+[[play some video games]]
+[[check Twitter]]
+
+::play some video games
+<<set vg=1>>you're not too good at the killing in this game, which is kinda funny since that's what it's all about, but it's still fun to run around even if you get caught
+
+you start loading up your last save
+
+[[play the loading minigame]]
+[[check Twitter]]
+
+::play the loading minigame
+you spin the thingy [[one way|this.goto('loaded')]], then [[the other|this.goto('loaded')]]
+
+::loaded
+you forgot you saved in the middle of a fight when you left off, and get killed almost immediately
+
+[[reload your save]]
+[[check Twitter]]
+
+::reload your save
+loading...
+
+[[play the loading minigame again]]
+[[check Twitter]]
+
+::play the loading minigame again
+you spin the thingy [[one way|this.goto('loaded2')]], then [[the other|this.goto('loaded2')]]
+
+::loaded2
+<<set vg=0>><<do --this.energy>>this time you're ready for the enemies, and make it through alive
+
+you play for a few hours and unlock a couple more levels
+
+[[grab some food]]
+[[check Twitter]]
+
+::grab some food
+<<do this.time=5>>getting to be about dinner time
+
+you raid the fridge and [[chow down]]
+
+::chow down
+<<do ++this.energy>>mostly leftovers, but nothing too good for the microwave
+
+[[watch another cartoon]]
+[[go to bed|this.goto('bed2')]]
+[[check Twitter]]
+
+::watch another cartoon
+<<set cartoon=1>>this one's about robots, but it's actually an analysis of political nationalism
+
+...or maybe it's about society's natural tendency towards form over function?
+
+[[contemplate]]
+[[check Twitter]]
+
+::contemplate
+it seems like there are mixed messages here; on the one hand it's doing an excellent job of presenting ever-cooler robots as analogous to an aspirational but ultimately unattainable "perfect form", all grimly contrasted with the atrocities of war, but on the other hand that girl could probably use some pants
+
+maybe you're reading too much into it...
+
+[[go to bed|this.goto('bed2')]]
+[[read more into it]]
+[[check Twitter]]
+
+::read more into it
+<<do --this.energy>>you're pretty sure you heard there were budget cuts partway through production on this - you bet that played a significant part in how it turned out
+
+hm apparently there's a movie sequel; maybe that stuck the landing?
+
+[[check it out]]
+[[go to bed|this.goto('bed2')]]
+[[check Twitter]]
+
+::check it out
+<<do --this.energy>>...
+
+...
+
+hm wow they sure didn't give her pants in this one either huh
+
+[[go to bed|this.goto('bed2')]]
+[[check Twitter]]
+
+::bed2
+<<do this.time=4>><<set cartoon=0>><<do ++this.energy>>probably a good decision yeah
+
+[[nighty night]]
+
+::nighty night
+been awhile since you've actually stuck roughly to your sleep schedule on a weekend
+
+feeling pretty good [[next morning]]
+
+::next morning
+today you've got some errands to run
+
+[[run errands]]
+[[blow them off]]
+[[check Twitter]]
+
+::run errands
+<<set errands=1>><<do this.time=2>>it's nothing too important, but stuff you'd rather not let wait
+
+takes most of the day, but you get it all done
+
+[[go to bed|this.goto('bed3')]]
+[[check Twitter]]
+
+::blow them off
+<<set errands=0>><<do this.time=2>>it's nothing too important; all stuff that can wait
+
+you spend most of your day making more progress on that game you're playing instead
+
+[[go to bed|this.goto('bed3')]]
+[[check Twitter]]
+
+::bed3
+wasn't the most productive weekend<<if this.errands==1>>, but you got some stuff done<<else>>, but you got some good R&R<<endif>>
+
+[[sweet dreams]]
+
+::sweet dreams
+<<do this.time=1>>oof monday already...
+
+[[head to work]]
+[[check Twitter]]
+
+::head to work
+you can't help but feel like you forgot something the other day...
+
+ah well, you've got bigger things to worry about now, off to work!
+
+[[the end|location.reload()]]
+
+::check Twitter
+<<if this.vg==1>>the load times in this game take forever...
+
+<<elseif this.cartoon==1>>you don't need to pay close attention to this show anyway...
+
+<<endif>>you look down at your phone and [[start scrolling]]
+
+::start scrolling
+<<if Math.random()<.3>>💖cool dude💖
+@pxscare (following)
+hey folks just a warmup
+[This media may contain sensitive material. Your media settings are configured to warn you when media may be sensitive.]<<elseif Math.random() < 0.3>>goodbots Retweeted
+every anagram
+@every_anagram
+Appendage
+Longing
+Lurid<<else>>TelCo(✓️)
+@tel_co
+It doesn't get any better than this.
+www.tel.co.uk
+> Promoted<<endif>>
+
+[[scroll down]]
+
+::scroll down
+<<if Math.random()<.3>>bigbuddy😘 Retweeted
+Dank
+@morememethanneeded
+pee is stored in the stummy send tweet<<elseif Math.random() < 0.3>>a literal fruit
+@literal_fruit (following)
+look all im sayin is dont bite folks without asking<<else>>👀
+@fu0976 (following)
+lrt except it's me instead of the dog
+<<endif>>
+
+[[keep scrolling]]
+
+::keep scrolling
+<<if this.time < 5>>Dev_Happy retweeted
+<<endif>>Ludum Dare
+@ludumdare (following)
+The theme for Ludum Dare 43 is: Sacrifices must be made #LDJAM
+
+[[oh wait what]]
+
+::oh wait what
+you forgot about LD until it was literally already happening again...
+
+well, [[better late than never|this.goto('work')]], right?
+
+::work
+you currently have:
+
+<<print this.getIdea()>>
+<<print this.getAssets()>>
+<<print this.getEnergy()>>
+<<print this.getTime()>>
+
+<<print this.getSummary()>>
+
+<<if this.idea==0>>[[come up with an idea]]
+<<elseif this.idea==1>>[[iron out the details]]
+<<endif>><<if this.idea==0 && this.art+this.code+this.music==0>>[[get right to work on some content]]
+<<elseif this.art==0||this.music==0||this.code==0>>[[work on some content]]
+<<elseif this.art==1||this.music==1>>[[refine your content|this.goto('work on some content')]]
+<<endif>><<if this.time==5||this.energy<0>>[[get some sleep]]
+<<endif>>[[call it quits]]
+
+::come up with an idea
+<<do ++this.idea>><<do --this.time>><<do --this.energy>>it's not a theme you would've voted for, but you can work with it
+
+specific enough to get some ideas flowing, vague enough to not be boring
+
+you brainstorm and [[take some notes|this.goto('work')]]
+
+::iron out the details
+<<do ++this.idea>><<do --this.time>><<do --this.energy>>hm you know what would really be good is if you tied the core game idea and mechanic to the process of making the game itself...
+
+in fact, that works perfectly with the theme! you better [[write all this down|this.goto('work')]] before you forget
+
+::get right to work on some content
+there's a lot to do before you've really got a game; what should you tackle first?
+
+[[start with art|this.goto('art1')]]
+[[figure out audio|this.goto('music1')]]
+[[get some coding done|this.goto('code1')]]
+
+::art1
+<<do document.querySelector('.app').className+=' art1'>><<do ++this.art>><<do --this.time>><<do --this.energy>>you sketch out some stuff on paper and quickly take some photos
+
+it's not pretty, but [[good enough for now|this.goto('work')]]
+
+::art2
+<<do document.querySelector('.app').className+=' art2'>><<do ++this.art>><<do --this.time>><<do --this.energy>>you take some time to replace your placeholder assets and doodles with something a bit more final
+
+it's looking [[pretty good!|this.goto('work')]]
+
+::music1
+<<do ++this.music>><<do --this.time>><<do --this.energy>>you download that chiptune sound effect generator thing that everyone always uses, hit randomize a few times, and save out the best ones
+
+would be nice to get something less generic, but [[better than nothing|this.goto('work')]]
+
+::music2
+<<do var a = this.bgm.play();this.bgm.fade(0, 0.5, 5000, a);>><<do ++this.music>><<do --this.time>><<do --this.energy>>you're not great at music, but you sit down with a simple sequencer and try your hand at a backing track anyway
+
+probably not going to win any awards, but it [[helps bring things together|this.goto('work')]]
+
+::code1
+<<do ++this.code>><<do --this.time>><<do --this.energy>>not gonna be much of a game without something to respond to user input
+
+you hook up [[the bare essentials|this.goto('work')]]
+
+::code2
+<<do ++this.code>><<do --this.time>><<do --this.energy>>would probably be better if the game didn't crash half the time folks played it
+
+you make sure things [[work at least mostly as intended|this.goto('work')]]
+
+::work on some content
+<<if Math.sign(this.art)+Math.sign(this.music)+Math.sign(this.code)<=2>>there's a lot to do before you've really got a game; <<endif>>what should you tackle next?
+
+<<if this.art==0>>[[start some art|this.goto('art1')]]
+<<elseif this.art==1>>[[clean up the art|this.goto('art2')]]
+<<endif>><<if this.music==0>>[[figure out audio|this.goto('music1')]]
+<<elseif this.music==1>>[[personalize the audio|this.goto('music2')]]
+<<endif>><<if this.code==0>>[[get something moving|this.goto('code1')]]
+<<elseif this.code==1>>[[fix the obvious bugs|this.goto('code2')]]<<endif>>
+
+::get some sleep
+<<do --this.time>><<do this.energy=Math.max(this.energy,2)>>probably a good idea; there's only so many hours in a day, and you gotta sleep for at least some of em
+
+you take a nice long [[power nap|this.goto('work')]]
+
+::call it quits
+<<if this.code+this.art+this.music+this.idea==0>>actually, yeah maybe not this time around
+
+you decide to skip out on this LD before getting invested; there's always next time
+
+<<else>><<if this.code+this.art+this.music==0>>well, you didn't really make anything, but coming up with ideas is the fun part anyway<<elseif this.code+this.art+this.music<5>>you didn't get a whole lot done, but hey, it's a game jam; who ever really executes fully on a jam game?<<elseif this.code+this.art+this.music<7>>you got a heck of a lot done too! it's not perfect, but nothing ever really is<<else>>huh, you actually did... pretty much everything you wanted to. that's pretty rare.<<endif>>
+
+<<if this.time<0>>unfortunately, you missed submission hour (twice); nothing wrong with sharing stuff after the deadline, but looks like you won't be entering this time around<<elseif this.time==0>>you missed the compo submission, but made it just on time for the jam!<<elseif this.time==3>>on the bright side, you finished right on time for the compo!<<elseif this.time <3>>you missed the compo, but finished up before the jam deadline<<else>>you did finish early though; always good to give yourself some time to relax on weekends<<endif>>
+
+<<if this.energy<0>>are you sure you got enough sleep though? making games is fun, but be sure to take care of yourself too; you don't wanna get burnt out just trying to meet some arbitrary deadlines after all
+
+<<endif>><<endif>>[[the end|location.reload()]]

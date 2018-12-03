@@ -11,6 +11,8 @@ export default function App({ }, { }) {
 				<Strand />
 			</main>
 			<footer>
+				<h1><SmallCaps>people like when you get meta</SmallCaps></h1>
+				<h2>...right?</h2>
 			</footer>
 		</div>
 	);
