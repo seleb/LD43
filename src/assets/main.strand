@@ -253,8 +253,8 @@ you currently have:
 <<if this.idea==0>>[[come up with an idea]]
 <<elseif this.idea==1>>[[iron out the details]]
 <<endif>><<if this.idea==0 && this.art+this.code+this.music==0>>[[get right to work on some content]]
-<<elseif this.art==0||this.music==0||this.code==0>>[[work on some content]]
-<<elseif this.art==1||this.music==1>>[[refine your content|this.goto('work on some content')]]
+<<elseif this.art==0||this.music==0||this.code==0||this.code==0>>[[work on some content]]
+<<elseif this.art==1||this.music==1||this.code==1>>[[refine your content|this.goto('work on some content')]]
 <<endif>><<if this.time==5||this.energy<0>>[[get some sleep]]
 <<endif>>[[call it quits]]
 
