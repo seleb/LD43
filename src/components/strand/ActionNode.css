@@ -1,0 +1,8 @@
+.action-node {
+	color: cornflowerblue;
+	font-weight: bold;
+	cursor: pointer;
+}
+.action-node:hover{
+	color: blue;
+}

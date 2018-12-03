@@ -1,0 +1,39 @@
+.strand {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-auto-rows: 100%;
+	width: 90%;
+	height: 90%;
+	max-width: 50em;
+	max-height: 30em;
+	border-color: #000;
+	border-width: 4em;
+	border-style: solid;
+	border-image-source: url('./../../assets/border0.png');
+	border-image-slice: 43% 40% 43% 40%;
+	border-image-width: 5em;
+	border-image-outset: 0;
+	border-image-repeat: round;
+}
+
+.strand>.passages-area {
+	height: 100%;
+	white-space: pre-wrap;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.strand>.passages-area::-webkit-scrollbar {
+	width: .2em;
+	background: none;
+	margin-left: .1em;
+}
+
+.strand>.passages-area::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, .5);
+	border-radius: .1em;
+}
+
+.strand>.passages-area::-webkit-scrollbar-track{
+	background: none;
+}

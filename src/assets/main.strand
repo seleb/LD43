@@ -1,0 +1,12 @@
+::start
+[[start game]]
+
+[[about]]
+
+::about
+written by [[Sean S. LeBlanc|window.open('https://seansleblanc.itch.io/', '_blank')]] for [[Ludum Dare 43|window.open('https://ldjam.com/', '_blank')]]
+
+[[back|this.back()]]
+
+::start game
+
